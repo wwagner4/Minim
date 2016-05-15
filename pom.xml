@@ -2,31 +2,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<!-- GENERAL INFO -->
-
 	<groupId>net.compartmental.code</groupId>
 	<artifactId>minim</artifactId>
-	<version>2.2.2-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>A sound synthesis library for Java</description>
 	<packaging>jar</packaging>
 
-	<developers>
-		<developer>
-			<name>Damien Di Fede</name>
-			<email>manfred@sonatype.com</email>
-			<timezone>GMT+7</timezone>
-			<organization>Sonatype</organization>
-			<organizationUrl>http://www.sonatype.com</organizationUrl>
-		</developer>
-	</developers>
-
-	<url>http://code.compartmental.net/tools/minim/</url>
+	<url>http://entelijan.net</url>
 
 	<scm>
-		<connection>scm:git:https://github.com/ddf/Minim.git</connection>
-		<url>https://github.com/ddf/Minim</url>
+		<connection>scm:git:https://github.com/wwagner4/Minim.git</connection>
+		<url>https://github.com/wwagner4/Minim</url>
 	</scm>
 
 	<licenses>
@@ -35,24 +23,6 @@
 			<url>http://www.opensource.org/licenses/mit-license.php</url>
 		</license>
 	</licenses>
-
-	<!-- BEGIN REPO / BUILD STUFF -->
-
-	<distributionManagement>
-		<!-- <repository> -->
-		<!-- <id>clojars</id> -->
-		<!-- <name>Clojars repository</name> -->
-		<!-- <url>https://clojars.org/repo</url> -->
-		<!-- </repository> -->
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>nexus-releases</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -101,15 +71,6 @@
 
 		</plugins>
 
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
 	</build>
 
 </project>
