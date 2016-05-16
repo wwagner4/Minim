@@ -26,7 +26,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>minim</id>
+			<id>bintray-repo</id>
 			<url>https://api.bintray.com/maven/wwagner4/maven-repo/minim/</url>
 		</repository>
 	</distributionManagement>
