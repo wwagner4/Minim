@@ -24,6 +24,12 @@
 		</license>
 	</licenses>
 
+	<distributionManagement>
+		<repository>
+			<id>minim</id>
+			<url>https://api.bintray.com/maven/wwagner4/maven-repo/minim/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
