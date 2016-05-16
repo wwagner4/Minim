@@ -1,10 +1,6 @@
-This repository prepares the minim library for managed environments.
+This repository prepares the https://github.com/ddf/Minim sound library for managed environments.
 
-Goal: v1.0.0 Will be deployed on bintray containing Minim 2.2.0
+The binaries can be downloaded from https://bintray.com/wwagner4/maven/minim/view. On bintray you can find the settings for
+your build system (maven, gradle, ...).
 
-TODOs
-* Remove ide-spezific files from the repository
-* Remove libraries from the repository (they should be defined in the pom xml)
-* Make the library buildable with maven
-* Make the library importable in eclipse and intellij using their import mechanisms
-* Add configurations for deployment in bintray to the pom.xml
+Version 1.0.0 is a branch of ddf/Minim 2.2.2
