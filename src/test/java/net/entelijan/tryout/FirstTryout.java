@@ -14,7 +14,7 @@ public class FirstTryout
 	public static void main(String[] args) throws InterruptedException
 	{
 		Random ran = new Random();
-		
+
 		FileLoader fileLoader = new FileLoader();
 		MinimServiceProvider serviceProvider = new JSMinim( fileLoader );
 		System.out.println( "Created a service provider: " + serviceProvider );
@@ -27,19 +27,27 @@ public class FirstTryout
 		out.setTempo( 60 );
 
 		out.pauseNotes();
-		for ( float i = 0; i < 10; i += 1 )
-		{
-			out.playNote( i, 1.4f, 97.99f + ran.nextFloat() * 5f );
-			out.playNote( i + 0.5f, 0.4f, 123.47f + ran.nextFloat() * 20f);
-		}
+		playNote( out, ran, 0.0 );
+		playNote( out, ran, 3.0 );
+		playNote( out, ran, 4.0 );
 
 		out.resumeNotes();
-		System.out.println( "resumed notes" );
+		System.out.println( "Resumed notes" );
 
-		Thread.sleep( 10000 );
+		int seconds = 10; 
+		Thread.sleep( seconds * 1000 );
 		out.close();
-		System.out.println( "Closed after 10s" );
+		System.out.printf( "Closed after %ds%n", seconds );
 
+	}
+
+	private static void playNote(AudioOutput out, Random ran, Double time)
+	{
+		float t = time.floatValue();
+		out.playNote( t, 6f, 97.99f + ran.nextFloat() * 5f );
+		out.playNote( t, 5f, 200f + ran.nextFloat() * 5f );
+		out.playNote( t, 4f, 200f + ran.nextFloat() * 5f );
+		out.playNote( t, 3f, 200f + ran.nextFloat() * 5f );
 	}
 
 	public static class FileLoader
