@@ -26,10 +26,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>bintray-repo</id>
-			<url>https://api.bintray.com/maven/wwagner4/maven-repo/minim/</url>
+			<id>bintray</id>
+			<name>wwagner4-maven</name>
+			<url>https://api.bintray.com/maven/wwagner4/maven/minim/</url>
 		</repository>
 	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
