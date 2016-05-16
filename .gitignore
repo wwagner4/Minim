@@ -1,6 +1,7 @@
 bin/
 doc/
 javadoc/
+/target/
 documentation/
 examples/Playable/
 examples/Recordable/
@@ -8,4 +9,8 @@ dist/
 release/
 *.swp
 .DS_Store
-
+.project
+.settings
+.classpath
+.idea
+*.iml
