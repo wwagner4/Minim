@@ -2,8 +2,8 @@ This repository provides the [ddf/minim](https://github.com/ddf/Minim) sound lib
 
 The binaries can be downloaded from [bintray](https://bintray.com/wwagner4/maven/minim/view). 
 
-Click the 'SET ME UP!' on the download page to learn how to 
-integrate minim using your favourite build system (maven, gradle, ...).
+Click the 'SET ME UP!' button on the download page to learn how to 
+integrate minim using your favourite build system (maven, gradle, ...) or have a look at the example projects.
 
 Version 1.0.0 is a branch of ddf/Minim Release 2.2.2
 
