@@ -9,3 +9,4 @@ Version 1.0.0 is a branch of ddf/Minim Release 2.2.2
 
 Examples using managed minim:
 * [wwagner4/minim-examples-java](https://github.com/wwagner4/minim-examples-java)
+* [wwagner4/minim-examples-scala](https://github.com/wwagner4/minim-examples-scala)
